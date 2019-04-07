@@ -10,7 +10,7 @@ public class ThrowandThrows {
 		System.out.println("Main method");
 			first();
 	}
-	private static void first() {
+	private static void first()  {
 		// TODO Auto-generated method stub
 		System.out.println("First Method");
 		try {
