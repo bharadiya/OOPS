@@ -17,9 +17,11 @@ public class LearningMap {
 		one.put("Hobbies", "Reading");
 		one.put("Fav sport", "Badminton");
 		System.out.println(one);
+		System.out.println();
 		//System.out.println(one.get("Name"));
 		Set<String> aSET=one.keySet();
 		System.out.println(aSET);
+		System.out.println();
 		for (String key : aSET) {
 			System.out.println(key+" "+one.get(key));
 		}
