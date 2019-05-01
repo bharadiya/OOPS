@@ -13,6 +13,5 @@ public class SecondChild extends Parent {
 		Q.m1(5);
 		Q.m2(); // Both child and parent methods are visible as referece is made by child and
 				// then type casted but still private methods of any class cant be accesed.
-  
 	}
 }
