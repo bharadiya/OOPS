@@ -74,3 +74,16 @@ public class ArrayListexample {
 
 	}
 }
+
+/*
+Assignment : 
+	
+	1. Create 3 arraylist , firstname middlename and lastnames.then
+		create one more arraylist fullnames add all three arraylist in full name.
+		Then print full name of every student.
+	2. 
+
+
+
+
+*/
