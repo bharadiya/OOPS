@@ -11,4 +11,7 @@ public abstract class ArithematicOperations implements CommonOperations {
 		public boolean isEven(int p) {
 			return p%2==0;
 		}
+		public ArithematicOperations() {
+			System.out.println("Hi");
+		}
 }

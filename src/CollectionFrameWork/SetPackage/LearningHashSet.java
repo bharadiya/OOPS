@@ -25,6 +25,5 @@ public class LearningHashSet {
 		values2.add(92);
 		System.out.println(values2);
 		// See how sequence is not getting maintained
-
 	}
 }

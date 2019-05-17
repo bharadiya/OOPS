@@ -11,6 +11,7 @@ public class Linkedlisteg {
 		A.add(1);
 		A.add(2);
 		A.add(1, 5);
+		System.out.println(A.get(0));
 		System.out.println(A);
 	}
 }
