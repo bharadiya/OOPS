@@ -39,4 +39,10 @@ public class OddOperation extends ArithematicOperations {
 		return 0;
 	}
 
+	@Override
+	public int additon(int a, int b, int c) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

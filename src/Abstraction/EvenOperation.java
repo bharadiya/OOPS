@@ -9,6 +9,12 @@ public class EvenOperation extends ArithematicOperations {
 		return -1;
 	}
 	@Override
+	public int additon(int a, int b,int c) {
+		if (isEven(a) && isEven(b))
+			return a + b;
+		return -1;
+	}
+	@Override
 	public int multiplication(int a, int b) {
 		// TODO Auto-generated method stub
 		return 0;

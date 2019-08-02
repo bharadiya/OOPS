@@ -6,6 +6,6 @@ public class Tieto2 {
 		int start = 1;
 		char end = 5;
 		System.out.println(start + end);
-		System.out.println(s.substring(start, end));
+		System.out.println(s.substring(end));
 	}
 }

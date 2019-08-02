@@ -1,6 +1,6 @@
 package CollectionFramework.ListPackage;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 /*
  Array disadvantages :
@@ -55,11 +55,14 @@ import java.util.ArrayList;
 
 public class ArrayListexample {
 	public static void main(String[] args) {
-		ArrayList <Integer>al = new ArrayList<Integer>();
-		for (int i = 0; i < 5; i++) {
-			al.add(i, i);
-		}
-		al.add(4,5);
+		LinkedList al = new LinkedList();
+		LinkedList <Integer>al1 = new LinkedList<Integer>();
+		al.add("Shashank");
+		al.add("hi");
+		al.add(1);
+		al.add(null);
+		al1.addAll(al);
+		System.out.println(al1);
 //		al.add(4,5);
 //		al.add(4,5);
 //		al.add(4,5);
@@ -68,9 +71,10 @@ public class ArrayListexample {
 		//al.add(2,"Typing a string");
 //		al.remove(4);
 		System.out.println(al.size());
+		System.out.println(al);
 		int sum=0;
-		sum=al.get(0)+al.get(1);
-		System.out.println(sum);
+		//sum=al.get(0)+al.get(1);
+		//System.out.println(sum);
 
 	}
 }
