@@ -1,0 +1,11 @@
+Typically, the compiled code is the exact set of instructions the CPU requires to "execute" the program. In Java, the compiled code is an exact set of instructions for a "virtual CPU" which is required to work the same on every physical machine.
+
+So, in a sense, the designers of the Java language decided that the language and the compiled code was going to be platform independent, but since the code eventually has to run on a physical platform, they opted to put all the platform dependent code in the JVM.
+
+This requirement for a JVM is in contrast to your Turbo C example. With Turbo C, the compiler will produce platform dependent code, and there is no need for a JVM work-alike because the compiled Turbo C program can be executed by the CPU directly.
+
+With Java, the CPU executes the JVM, which is platform dependent. This running JVM then executes the Java bytecode which is platform independent, provided that you have a JVM available for it to execute upon. You might say that writing Java code, you don't program for the code to be executed on the physical machine, you write the code to be executed on the Java Virtual Machine.
+
+The only way that all this Java bytecode works on all Java virtual machines is that a rather strict standard has been written for how Java virtual machines work. This means that no matter what physical platform you are using, the part where the Java bytecode interfaces with the JVM is guaranteed to work only one way. Since all the JVMs work exactly the same, the same code works exactly the same everywhere without recompiling. If you can't pass the tests to make sure it's the same, you're not allowed to call your virtual machine a "Java virtual machine".
+
+Of course, there are ways that you can break the portability of a Java program. You could write a program that looks for files only found on one operating system (cmd.exe for example). You could use JNI, which effectively allows you to put compiled C or C++ code into a class. You could use conventions that only work for a certain operating system (like assuming ":" separates directories). But you are guaranteed to never have to recompile your program for a different machine unless you're doing something really special (like JNI).
